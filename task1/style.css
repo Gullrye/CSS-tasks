@@ -1,0 +1,15 @@
+.wrap {
+  width: 100%;
+}
+
+.cell {
+  float: left;
+  margin: 1.5%;
+  padding: 15%;
+  border-radius: 10%;
+  background-color: #FEA500;
+}
+
+.clear {
+  clear: both;
+}

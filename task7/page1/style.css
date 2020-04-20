@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F0F0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  background-color: #29bde0;
+}
+
+.bg-menu_1 {
+  width: 17px;
+  height: 13.5px;
+  margin-left: .5rem;
+  background: url(../img/css_sprites.png) -1px -153.5px;
+}
+
+main {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lastgame {
+  display: flex;
+  position: relative;
+  width: 90vw;
+  height: 4rem;
+  margin-top: 1rem;
+  border: 1px solid #ffffff;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  color: #A0A0A0;
+  background-color: #ffffff;
+}
+
+.bg-go {
+  position: absolute;
+  right: 10px;
+  width: 12px;
+  height: 20px;
+  padding-right: 0;
+  background: url(../img/css_sprites.png) -190.5px -43px;
+}
+
+.game-type {
+  position: relative;
+  display: flex;
+  width: 90vw;
+  height: 75vh;
+  margin-top: 1rem;
+  border: 1px solid #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  border-bottom: 1px solid #FDD793;
+  justify-content: center;
+  align-items: center;
+  color: #fbb435;
+  background-color: #ffffff;
+}
+
+.type {
+  display: flex;
+  width: 75vw;
+  height: 12vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #69d1e9;
+  color: #ffffff;
+}
+
+.num {
+  font-size: .9rem;
+  color: #A0A0A0;
+}
+
+.row-other {
+  display: flex;
+}
+
+.bg-next {
+  position: absolute;
+  right: 1px;
+  width: 14px;
+  height: 28px;
+  padding-right: 0;
+  align-self: center;
+  background: url(../img/css_sprites.png) -190.5px -5px;
+}
+
+.points {
+  height: 0.5rem;
+  margin-bottom: 5px;
+}
+
+.point {
+  width: 7px;
+  height: 7px;
+  margin-right: 3px;
+  border: 1px solid #F0F0F0;
+  border-radius: 50%;
+  background-color: #F0F0F0;
+}
+
+.point-select {
+  border-color: #69d1e9;
+  background-color: #69d1e9;
+}
