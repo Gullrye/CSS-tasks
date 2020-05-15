@@ -83,7 +83,6 @@ main{
 .bg-time {
   width: 12px;
   height: 12px;
-  float: left;
   margin-right: 5px;
   background: url(img/css_sprites.png) -93px -62px;
 }
