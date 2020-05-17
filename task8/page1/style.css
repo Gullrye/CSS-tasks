@@ -1,99 +1,120 @@
-body {
+* {
   margin: 0;
   padding: 0;
-}
-
-header {
-  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .login-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 2rem;
+  width: 90vw;
+  margin: 0 auto;
 }
 
-.tel {
-  margin-left: 10%;
+.login-bar span {
+  margin-left: 1.5rem;
   color: #29b078;
 }
 
-.logo {
+.login-list {
   width: 107px;
   height: 24px;
-  margin-right: 10%;
-  background-image: url(../img/contact.png);
+  margin: 8px 0;
+  margin-right: 1.5rem;
+  list-style: none;
+  background: url(../img/contact.png);
 }
 
-nav {
+.navbar {
+  /* 不用 flex 设置垂直居中，不然 hover 显示 border-bottom 时高度会变动 */
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 6rem;
+  height: 80px;
   background-color: #29b078;
 }
 
-.menu-list {
-  margin-right: 10%;
+/* 用 wrap 来设置宽度等使导航栏按钮最右侧和上边对齐 */
+.nav-list-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
   color: white;
 }
 
-.menu-list span {
-  padding: 0 25px;
+.nav-list a {
+  display: block;
+  padding: 0 1.5rem;
+  line-height: 77px;
+  color: white;
+  text-decoration: none;
 }
 
-main {
-  margin-top: rem;
+.nav-list a:hover {
+  border-bottom: 3px solid white;
 }
 
-.slide {
-  position: relative;
+.slideshow img {
+  max-width: 100%;
+  height: auto;
 }
 
-.slide img {
-  width: 100%;
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-.prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 8%;
-  height: 3rem;
-  margin: auto;
+.logo4 {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(../img/logo4.png);
 }
 
-.next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 8%;
-  height: 3rem;
-  margin: auto;
+.merit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 10rem;
+  color: #666;
 }
 
-.trigger {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
+.merit-card {
   display: flex;
-  justify-content: center;
-  height: 10px;
-  margin-bottom: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
 }
 
-.trigger span {
-  width: 10px;
-  height: 10px;
-  margin-right: 3px;
-  border: 1px solid #F0F0F0;
-  border-radius: 50%;
-  background-color: transparent;
+.card-title {
+  margin: 1rem 0;
 }
 
-.content {
-  height: 50rem;
-  background-color: #29b078;
+.merit-card:nth-child(3) {
+  border-right: 1px dashed #ddd;
 }
+
+.merit-img-div {
+  height: 4rem;
+}
+
+.card-other {
+  justify-content: flex-end;
+}
+
+.card-other p {
+  margin-top: 1rem;
+
+}
+
+.learning-way {
+  height: 10rem;
+}
+
