@@ -80,7 +80,7 @@
 
 .merit {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-top: 10rem;
   color: #999;
 }
@@ -120,10 +120,23 @@
 
 .learning-way {
   display: grid;
-  grid-template-columns: repeat(3, 5fr 2fr) 4fr;
-  grid-template-rows: 150px 150px;
+  grid-template-columns: repeat(3, 5fr 2fr) 5fr;
+  grid-template-rows: auto auto;
   align-items: center;
   justify-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .learning-way {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(8, auto);
+  }
+  .way {
+    justify-self: start;
+  }
+  .way:nth-child(7) {
+    grid-column:  1 / -1;
+  }
 }
 
 .way {
@@ -131,6 +144,7 @@
   grid-template-columns: 1fr 3fr;
   color: #999;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .circle {
@@ -162,8 +176,8 @@
 
 .stu-show {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto auto;
   align-items: center;
   grid-gap: 55px;
 }
