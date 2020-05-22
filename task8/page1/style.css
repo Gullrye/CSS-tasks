@@ -53,6 +53,7 @@ html {
 .nav-list a {
   display: block;
   padding: 0 1.5rem;
+  height: 77px;
   line-height: 77px;
   color: white;
   text-decoration: none;
