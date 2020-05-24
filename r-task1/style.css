@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  padding-left: 5px;
+  border-left: 5px solid blueviolet;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(3, 30vw) / repeat(3, 30vw);
+  gap: 2.5vw;
+  justify-content: center;
+}
+
+.box {
+  background-color: #fea500;
+  border-radius: 3vw;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 30vw;
+  height: 30vw;
+  margin: 1.25vw 0;
+  background-color: #fea500;
+  border-radius: 3vw;
+}
+
+.cards {
+  width: 97.5vw;
+  margin: 0 auto;
+}
+
+.card {
+  float: left;
+  overflow: hidden;
+  /* width: 30vw;
+  height: 30vw; */
+  padding: 15vw;
+  margin: 1.25vw;
+  border-radius: 3vw;
+  background-color: #fea500;
+}
